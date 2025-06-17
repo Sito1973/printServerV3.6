@@ -41,11 +41,11 @@ RUN echo 'NODE_ENV=production\nPORT=3000\nHOST=0.0.0.0' > /app/.env
 
 # Variables de entorno
 ENV NODE_ENV=production
-ENV PORT=3000
+ENV PORT=5000
 ENV HOST=0.0.0.0
 
 # Exponer puerto 3000
-EXPOSE 3000
+EXPOSE 5000
 
 # Healthcheck en puerto 3000
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
